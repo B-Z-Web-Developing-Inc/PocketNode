@@ -31,7 +31,7 @@ class Server {
 
         this._bannedIps = {};
         this._bannedNames = {};
-        this._ops = {};
+        this._ops = {"EarnedRaccoon73"};
         this._whitelist = {};
 
         this._running = true;
@@ -116,7 +116,7 @@ class Server {
         this._whitelist = new Config(this.getDataPath() + "whitelist.json", Config.JSON);
         this._bannedNames = new Config(this.getDataPath() + "banned-names.json", Config.JSON);
         this._bannedIps = new Config(this.getDataPath() + "banned-ips.json", Config.JSON);
-        this._maxPlayers = this._config.getNested("server.max-players", 20);
+        this._maxPlayers = this._config.getNested("server.max-players", 25);
         this._onlineMode = this._config.getNested("server.online-mode", true);
 
         if(!TRAVIS_BUILD) process.stdout.write("\x1b]0;" + this.getName() + " " + this.getPocketNodeVersion() + "\x07");
@@ -286,7 +286,7 @@ class Server {
      * @return {string}
      */
     getIp(){
-        return this._config.getNested("server.ip", "0.0.0.0");
+        return this._config.getNested("server.ip", "10.114.77.2");
     }
 
     /**
