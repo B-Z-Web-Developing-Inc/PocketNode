@@ -318,7 +318,7 @@ class Server {
      * @return {string}
      */
     getMotd(){
-        return this._config.getNested("server.motd", this._pocketnode.NAME + " Server");
+        return this._config.getNested("server.motd", this._pocketnode.NAME + " Beta Server");
     }
 
     /**
