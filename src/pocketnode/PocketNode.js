@@ -7,7 +7,7 @@ const Server = pocketnode("Server");
 
 function PocketNode(paths){
     this.START_TIME = Date.now();
-    this.NAME = "PocketNode";
+    this.NAME = "ZWrld";
     this.CODENAME = "[BEGINNINGS]";
     this.VERSION = "0.0.5";
     this.API_VERSION = "1.0.0";
